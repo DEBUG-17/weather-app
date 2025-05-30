@@ -1,0 +1,81 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(120deg, #83a4d4 0%, #b6fbff 100%);
+  text-align: center;
+  padding-top: 50px;
+  min-height: 100vh;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 35px 30px 30px 30px;
+  border-radius: 18px;
+  width: 340px;
+  margin: auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  transition: box-shadow 0.3s;
+}
+
+.container:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22);
+}
+
+input {
+  padding: 12px;
+  width: 85%;
+  margin-bottom: 15px;
+  border: 1px solid #b6fbff;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+input:focus {
+  border: 1.5px solid #4a90e2;
+}
+
+button {
+  padding: 12px 28px;
+  background: linear-gradient(90deg, #4a90e2 60%, #357ab7 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(74, 144, 226, 0.12);
+  transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #357ab7 60%, #4a90e2 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.weather-box {
+  margin-top: 25px;
+  padding: 18px 0;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #e0eafc 0%, #cfdef3 100%);
+  box-shadow: 0 2px 8px rgba(131, 164, 212, 0.12);
+  font-size: 1.1rem;
+  color: #333;
+  min-height: 60px;
+  transition: background 0.3s;
+}
+
+.weather-box strong {
+  color: #4a90e2;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 95vw;
+    padding: 20px 5vw;
+  }
+  input {
+    width: 95%;
+  }
+}
